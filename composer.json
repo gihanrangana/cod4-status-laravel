@@ -1,0 +1,26 @@
+{
+    "name": "sky/cod4-status",
+    "description": "cod4 server status",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sky\\Cod4Status\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gihan Rangana",
+            "email": "itsmerangana@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sky\\Cod4Status\\Cod4StatusServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}

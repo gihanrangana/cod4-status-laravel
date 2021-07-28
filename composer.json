@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Sky\\Cod4Status\\": "src/"
+            "MTX_GHOST\\Cod4Status\\": "src/"
         }
     },
     "authors": [
@@ -17,7 +17,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Sky\\Cod4Status\\Cod4StatusServiceProvider"
+                "MTX_GHOST\\Cod4Status\\Cod4StatusServiceProvider"
             ]
         }
     },

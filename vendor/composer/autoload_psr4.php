@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Sky\\Cod4Status\\' => array($baseDir . '/src'),
+    'MTX_GHOST\\Cod4Status\\' => array($baseDir . '/src'),
 );

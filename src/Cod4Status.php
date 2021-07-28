@@ -1,6 +1,6 @@
 <?php
 
-namespace Sky\Cod4Status;
+namespace MTX_GHOST\Cod4Status;
 
 class Cod4Status
 {

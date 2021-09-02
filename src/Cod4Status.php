@@ -107,24 +107,26 @@ class Cod4Status
         }
 
         $this->serverData['sv_hostname'] = $this->colorCode($this->serverData['sv_hostname']);
-
+        
         foreach ($tempPlayersArray as $key => $value) {
-
+            
             if (strlen(trim($value)) > 1) {
-
+                
                 $temp = explode(' ', $value);
-
+                
                 $pos = strpos($value, '"') + 1;
                 $endpos = strlen($value) - 1;
-
+                
                 $this->players[sizeof($this->players)] = [
                     "name" => utf8_encode(substr($value, $pos, $endpos - $pos)),
                     "score" =>  $temp[0],
                     "ping" =>  $temp[1],
                 ];
-
+                
             }
         }
+
+        $this->serverData['online_players'] = sizeof($this->players);
     }
 
     public function colorCode($string)

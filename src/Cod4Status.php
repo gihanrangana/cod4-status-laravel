@@ -118,7 +118,7 @@ class Cod4Status
                 $endpos = strlen($value) - 1;
 
                 $this->players[sizeof($this->players)] = [
-                    "name" => substr($value, $pos, $endpos - $pos),
+                    "name" => utf8_encode(substr($value, $pos, $endpos - $pos)),
                     "score" =>  $temp[0],
                     "ping" =>  $temp[1],
                 ];

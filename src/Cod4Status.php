@@ -71,7 +71,7 @@ class Cod4Status
             return false;
         } else {
             if (strlen(trim($this->data)) == 0) {
-                echo 'No data received from server.';
+                // echo 'No data received from server.';
                 return false;
             } else {
                 return true;
